@@ -10,7 +10,7 @@ def get_sheet():
             ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive'])
     client = gspread.authorize(creds)
     # Cambiamos open() por open_by_key() usando tu ID
-    return client.open_by_key(17YUr7sP7cQgqHofUK7awOQQArQ7wEALTmplD1kkEjNI).sheet1
+    return client.open_by_key("17YUr7sP7cQgqHofUK7awOQQArQ7wEALTmplD1kkEjNI").sheet1
     # Abre tu hoja de cálculo por nombre
     return client.open("BaseDatosNotas").sheet1
 
