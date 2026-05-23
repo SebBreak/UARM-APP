@@ -144,9 +144,7 @@ if menu == "Mis Notas":
         
         peso_faltante = 1.0 - peso_acumulado
         
-        if peso_acumulado > 0:
-            promedio_actual = puntos_acumulados / peso_acumulado
-            st.write(f"Promedio actual con lo rendido: **{promedio_actual:.2f}**")
+        st.write(f"Promedio actual acumulado: **{puntos_acumulados:.2f} / 20**")
         
         if peso_faltante > 0:
             puntos_necesarios = 10.5 - puntos_acumulados
